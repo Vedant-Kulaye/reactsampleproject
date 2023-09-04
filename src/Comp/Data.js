@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Api from "../Api"
-import scroll from "../assets/scroll.js"
-import myscroll from "../assets/scroll.css"
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 export default function Data() {
     const navigate=useNavigate()
@@ -61,13 +59,13 @@ useEffect(()=>{
         return(
             <div className="card col-xl-3 col-lg-4 col-md-5 col-sm-6 col-12 m-3 d-flex flex-direction-column justify-content-around align-items-center hidden" style={{height:"450px"}} key={index}>
  
-     <img className="card-img-top " src={value.images[0]} height="50%"  alt="Card image cap"/>
+     <img className="card-img-top " src={value.images[0]} height="50%"  alt="Card imag cap"/>
  
         <div className="card-body">
 
      <h5 className="card-title">{value.title}</h5>
         <p className="card-text">{value.price}</p>
-     <a href="#" className="btn btn-primary">Add Cart</a>
+          <Link className='btn btn-dark p-2'>Add To Cart</Link>
         </div>
         </div>
         )
