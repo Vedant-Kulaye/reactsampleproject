@@ -16,7 +16,7 @@ export default function Cart() {
             <div className='container'>
                 <div className='row'>
                     <div className='col-xl-3'>
-                        <img src={img} className='card-img'/>
+                        <img src={img} alt="cart im" className='card-img'/>
                     </div>
                     <div className='col-xl-4'><h1 className='display-6'>Price{}</h1></div>
                     <div className='col-xl-4'>2</div>
